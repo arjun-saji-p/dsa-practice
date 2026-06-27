@@ -1,0 +1,15 @@
+nums = [8,2,5,1,7]
+
+smallest = float('inf')
+second = float('inf')
+
+for num in nums:
+
+    if num < smallest:
+        second = smallest
+        smallest = num
+
+    elif num < second and num != smallest:
+        second = num
+
+print(second)
